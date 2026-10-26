@@ -1,0 +1,24 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+
+# Local sensitive configs and credentials
+config.yaml
+!config.example.yaml
+
+# Data, PDFs and logs
+*.db
+*.sqlite3
+*.pdf
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

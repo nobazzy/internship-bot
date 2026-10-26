@@ -1,0 +1,63 @@
+# config.example.yaml - Modelo de Configuração do Bot de Vagas
+
+personal:
+  name: "Seu Nome Completo"
+  email: "seu_email@dominio.com"
+  phone: "5511999999999"
+  city: "São Paulo"
+  state: "SP"
+  github: "https://github.com/seu_usuario"
+  education:
+    course: "Ciência da Computação"
+    institution: "Universidade Exemplo"
+    semester: "4º semestre - em andamento"
+  skills:
+    - "Java"
+    - "Python"
+    - "MySQL"
+    - "PostgreSQL"
+    - "Git"
+
+resume_path: "./curriculo.pdf"
+auto_apply: false
+max_days_posted: 14
+target_locations: ["São Paulo", "SP", "Remoto", "Home Office"]
+
+platforms:
+  linkedin:
+    enabled: true
+    username: "seu_email@linkedin.com"
+    password: "" # Defina no arquivo local ou via variável de ambiente
+    easy_apply_only: true
+    keywords:
+      - "Estágio TI São Paulo"
+      - "Estágio Java São Paulo"
+      - "Estágio Python São Paulo"
+      - "Estágio Desenvolvimento São Paulo"
+      - "Estágio TI Remoto"
+    location: "São Paulo, SP, Brasil"
+
+  gupy:
+    enabled: true
+    login_type: "google"
+    email: "seu_email@dominio.com"
+    password: ""
+    rss_url: "https://news.google.com/rss/search?q=site:gupy.io+(%22estagio+ti%22+OR+%22estagio+desenvolvimento%22)+(%22Sao+Paulo%22+OR+%22Remoto%22)+when:14d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+
+  catho_and_portals:
+    enabled: true
+    email: "seu_email@dominio.com"
+    password: ""
+    rss_url: "https://news.google.com/rss/search?q=(site:catho.com.br+OR+site:infojobs.com.br)+(%22estagio+ti%22)+(%22Sao+Paulo%22+OR+%22Remoto%22)+when:14d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+
+email:
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 465
+  user: "seu_email_smtp@gmail.com"
+  password: ""
+  to_email: "destinatario@dominio.com"
+
+schedule:
+  interval_minutes: 60
+
+database: "vacancies.db"
